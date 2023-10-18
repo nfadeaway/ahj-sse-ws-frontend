@@ -1,7 +1,7 @@
 import ChatController from "./chatController";
 
 // const ws = new WebSocket('ws://127.0.0.1:7071/ws')
-const ws = new WebSocket("wss://chat-g0bb.onrender.com:7071/ws");
+const ws = new WebSocket("wss://chat-g0bb.onrender.com/ws");
 const app = document.querySelector(".app");
 const chatController = new ChatController(app);
 
