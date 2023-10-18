@@ -1,0 +1,176 @@
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Verdana', sans-serif;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  width: 700px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  align-items: flex-start;
+}
+
+.main-container__hor {
+  display: flex;
+  align-items: flex-start;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-top: 20px;
+  padding: 15px 15px 0 15px;
+  border: 1px solid black;
+  border-right: 0;
+  border-radius: 15px 0 0 15px;
+}
+
+.users__user {
+  display: flex;
+  height: 30px;
+  margin-bottom: 15px;
+  box-sizing: content-box;
+  align-items: center;
+}
+
+.users__user_avatar {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.users__user_nickname {
+  display: flex;
+  margin-left: 15px;
+}
+
+.red {
+  color: red;
+}
+
+.chat-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 518px;
+  height: 500px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.all-messages {
+  height: 418px;
+  margin-bottom: 15px;
+  overflow-y: scroll;
+}
+
+.message-form {
+  width: 486px;
+}
+
+.message-form__message,
+.modal-nickname__input-nickname {
+  width: 479px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.submit {
+  display: none;
+}
+
+.user-message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.user-message__info {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.user-message__text {
+  font-size: 15px;
+}
+
+.my-message {
+  align-items: flex-end;
+}
+
+.modal-nickname {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  margin-left: -166px;
+  margin-top: -77px;
+  flex-direction: column;
+  width: 332px;
+  padding: 10px 15px 15px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.modal-nickname__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal-nickname__input-nickname {
+  width: 293px;
+  margin-bottom: 4px;
+}
+
+.modal-nickname__error {
+  display: none;
+  font-size: 12px;
+}
+
+.modal-nickname__confirm-btn {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+}
